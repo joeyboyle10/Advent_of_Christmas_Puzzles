@@ -29,12 +29,13 @@ public class Puzzle3 {
                     end++;
                 }
                 
-                String PString = "";
+                String LineTotal = "";
                 for (int i = 0; i < digits; i++) {
-                    PString += line.charAt(Integer.parseInt(P[i]));
+                    LineTotal += line.charAt(Integer.parseInt(P[i]));
                 }
 
-                total += Long.parseLong(PString);
+                total += Long.parseLong(LineTotal);
+                System.out.println("LineTotal: " + LineTotal);
                 System.out.println("Total: " + total);
             }
 

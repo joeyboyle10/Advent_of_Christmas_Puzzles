@@ -1,9 +1,7 @@
 import java.io.*;
 import java.nio.file.*;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 
 public class Puzzle5_2 {
 
@@ -31,8 +29,6 @@ public class Puzzle5_2 {
             String content = Files.readString(Paths.get("input5.txt"));
             String[] lines = content.trim().split("\n");
             List<Range> ranges = new ArrayList<>();
-
-            
             
             for (String line : lines) {
                 if(line.contains("-")) {

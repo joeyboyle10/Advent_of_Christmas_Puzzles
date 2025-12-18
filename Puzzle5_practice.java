@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Puzzle5_1 {
+public class Puzzle5_practice {
     public static void main(String[] args) {
         try {   
             String content = Files.readString(Paths.get("input5.txt"));

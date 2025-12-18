@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 import java.nio.file.*;
 
@@ -12,16 +11,13 @@ public class Puzzle2 {
             long total = 0L;
 
             for (String line : lines) {
-
                 String[] nums = line.split("-");
-                System.out.println(nums[0] + ":=:" + nums[1]);
+                System.out.println("Range: " + nums[0] + " - " + nums[1]);
 
                 for(long i = Long.parseLong(nums[0]); i <= Long.parseLong(nums[1]); i++) {
-
                     boolean isInvalid = false;
                    
                     for(int unitLen = 1; unitLen <= Long.toString(i).length() / 2; unitLen++) {
-
                         if(Long.toString(i).length() % unitLen != 0) {
                             continue;
                         }

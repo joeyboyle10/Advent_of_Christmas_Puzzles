@@ -46,6 +46,7 @@ public class Puzzle4 {
                         if(unitCount < 4 && grid[i][j] == 1) {
                             totalCount++;
                             isAccessible = true;
+                            System.out.println("Grid: [" + i + "][" + j + "] = " + grid[i][j]);
                             grid[i][j] = 0;
                         }
                         unitCount = 0;

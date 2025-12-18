@@ -1,7 +1,5 @@
-import java.util.*;
 import java.io.*;
 import java.nio.file.*;
-
 
 public class Puzzle1 {
     public static void main(String[] args) {

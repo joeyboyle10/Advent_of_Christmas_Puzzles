@@ -22,7 +22,7 @@ public class Puzzle10_1 {
 
     public static void main(String[] args) {
         try {
-            String content = Files.readString(Paths.get("input10.txt"));
+            String content = Files.readString(Paths.get("Puzzle 10/input10.txt"));
             String[] lines = content.trim().split("\n");
 
             int totalPresses = 0;

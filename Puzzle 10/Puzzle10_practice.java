@@ -2,8 +2,6 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
@@ -125,12 +123,6 @@ public class Puzzle10_practice {
     }
 
     public static void checkMachine(Map<Integer, List<Button>> map, Machine mach, Machine tempMach, Map<String, Integer> mapOfMachines, List<String> Routes, List<String> smallestRoute) {
-        /*System.out.println("--------------------------------");
-        System.out.println("Checking MACH: " + mach.toString());
-        System.out.println("Temp Machine Box: " + tempMach.toString());
-        System.out.println("Map of Buttons: " + map.toString());
-        System.out.println("Map of Machines: " + mapOfMachines.toString());
-        System.out.println("--------------------------------");*/
 
         if(Arrays.equals(tempMach.machine, mach.machine)) {
             System.out.println("Machine is the same, returning");
